@@ -63,9 +63,32 @@ class HomePage extends StatelessWidget {
                         horizontal: 0, vertical: 0.0),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
-                        CircularPercentIndicator(
+                        
+                        const Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: <Widget>[
+                            Text(
+                              'Lynx',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 30,
+                                color: LightColors.kDarkBlue,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            Text(
+                              'SE',
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Colors.black45,
+                                fontWeight: FontWeight.w300,
+                              ),
+                            ),
+                          ],
+                        ),CircularPercentIndicator(
                           radius: 80.0,
                           lineWidth: 5.0,
                           animation: true,
@@ -81,29 +104,6 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: <Widget>[
-                            Text(
-                              'Lynx',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 10,
-                                color: LightColors.kDarkBlue,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                            Text(
-                              'SE',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 10,
-                                color: Colors.black45,
-                                fontWeight: FontWeight.w300,
-                              ),
-                            ),
-                          ],
-                        )
                       ],
                     ),
                   )
